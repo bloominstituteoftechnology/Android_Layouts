@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:elevation="15dp"
+        android:src="@drawable/star_birth"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:outlineProvider="bounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Content Image" />
+
+    <ScrollView
+        android:id="@+id/demo_text"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="wrap_content"
+                    android:textSize="24sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:text="Star Birth in the Extreme"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/title_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Type"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/title_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Observation" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/title_job"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Release Date"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_toEndOf="@id/title_job"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:text="24 April 2007, 15:00" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/title_size"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Original Size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_toEndOf="@id/title_size"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="29566 x 14321 px" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_margin="5dp"
+                android:id="@+id/title_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/title_bio"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Hubble's view of the Carina Nebula shows star birth in a new level of detail. The fantasy-like landscape of the nebula is sculpted by the action of outflowing winds and scorching ultraviolet radiation from the monster stars that inhabit this inferno. In the process, these stars are shredding the surrounding material that is the last vestige of the giant cloud from which the stars were born.\n\n
+The immense nebula is an estimated 7,500 light-years away in the southern constellation Carina the Keel (of the old southern constellation Argo Navis, the ship of Jason and the Argonauts, from Greek mythology).\n\n
+This image is a mosaic of the Carina Nebula assembled from 48 frames taken with Hubble Space Telescope's Advanced Camera for Surveys. The Hubble images were taken in the light of ionized hydrogen. Colour information was added with data taken at the Cerro Tololo Inter-American Observatory in Chile. Red corresponds to sulfur, green to hydrogen, and blue to oxygen emission.\n\n
+Credit:\n
+NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA)" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
